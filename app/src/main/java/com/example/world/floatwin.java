@@ -64,10 +64,7 @@ public class floatwin extends AppCompatActivity {
         btnrefresh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int random = (int) (Math.random() * 10);
-                if (null != floatWindow) {
-                    floatWindow.updateText(String.valueOf(random));
-                }
+                floatWindow.hideFloatWindow();
             }
         });
     }
@@ -80,5 +77,8 @@ public class floatwin extends AppCompatActivity {
     }
 
 
+    public void gotocolor(View view) {
+        startActivity(new Intent(this, Colorban.class));
 
+    }
 }
