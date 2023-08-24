@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/btnBattery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取电池信息" />
+
+
+    <LinearLayout
+        android:id="@+id/panelBattery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#808080"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtBattery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在获取电池信息" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_txt"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/panelBattery"
+        android:layout_alignBottom="@+id/btnBattery"
+        android:layout_marginEnd="-787dp"
+        android:layout_marginBottom="-180dp">
+        <TextView
+            android:id="@+id/txt_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="电池容量："
+            android:textSize="30dp"
+            />
+
+        <ProgressBar
+            android:id="@+id/pro_irl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+             />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_health"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/btnBattery"
+        android:layout_alignBottom="@+id/btnBattery"
+        android:layout_marginEnd="-270dp"
+        android:layout_marginBottom="-270dp">
+
+        <TextView
+            android:id="@+id/txt_he"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="电池温度："
+            android:textSize="30dp" />
+
+        <ProgressBar
+            android:id="@+id/pro_hea"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
